@@ -1,17 +1,21 @@
-import React, { Component } from "react";
-import logo from "../src/images/B-logo_round.png";
+import React from "react";
+import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
+import Intro from "./pages/Intro";
+import Main from "./pages/Main";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h3>Babbel coding challenge for Filip Žafran</h3>
-        <h5> date: 15 April 2020</h5>
-        <h6>...well don't just stand there, click on the logo...</h6>
-      </header>
-    </div>
+    <Router className="App">
+      <Switch>
+        <Router path="/main">
+          <Main />
+        </Router>
+        <Route path="/">
+          <Intro />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

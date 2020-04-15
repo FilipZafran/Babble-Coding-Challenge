@@ -2,10 +2,9 @@
   text-align: center;
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Babbel-logo {
+    animation: Babbel-logo-spin infinite 20s linear;
   }
 }
 
@@ -20,8 +19,7 @@
   color: rgb(255, 121, 14);
 }
 
-
-@keyframes App-logo-spin {
+@keyframes Babbel-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -41,4 +39,12 @@ h5 {
 
 h6 {
   font-style: italic;
+}
+
+.babbelText {
+  height: 20px;
+}
+
+.textAppear {
+  delay: 5000;
 }
